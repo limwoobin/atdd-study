@@ -6,5 +6,10 @@ import lombok.Getter;
 public class PendingOrderResponse {
     private long id;
     private long productId;
-    private int quantity;
+    private long quantity;
+
+    public PendingOrderResponse(long productId, long quantity) {
+        this.productId = productId;
+        this.quantity = quantity;
+    }
 }
